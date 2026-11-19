@@ -14,3 +14,6 @@ auto.err
 *.swp
 .idea/
 .vscode/
+
+# 工具运行时目录
+.workbuddy/
