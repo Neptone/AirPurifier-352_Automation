@@ -1,5 +1,7 @@
 # 发布说明 / Release Notes
 
+仓库地址：<https://github.com/Neptone/AirPurifier-352_Automation>
+
 ## v1.0.0（2026-11-19）— 首个开源版本
 
 首个公开版本。功能全部经真机验证。
@@ -16,6 +18,8 @@
 - **无人值守部署**：CLI 标准入口 `purifier.py auto` + launchd 模板；
   凭据外置（环境变量 / `~/.352life/credentials.json`），程序内不存任何密码
 - **零依赖**：纯 Python 标准库（≥ 3.10）
+- **界面截图**：README 内嵌控制台实拍图 `docs/screenshot.jpg`（1920×960，单屏三栏全貌），
+  三栏职责一目了然
 
 ### 工程质量
 

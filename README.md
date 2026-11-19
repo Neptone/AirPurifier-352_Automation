@@ -55,8 +55,8 @@ examples/              launchd 定时任务模板 (macOS)
 ## 快速开始
 
 ```bash
-git clone https://github.com/<你的用户名>/purifier-352.git
-cd purifier-352
+git clone https://github.com/Neptone/AirPurifier-352_Automation.git
+cd AirPurifier-352_Automation
 
 # 1) 准备凭据 (三选一, 见「凭据与安全」)
 export AIR352_ACCOUNT="手机号"
