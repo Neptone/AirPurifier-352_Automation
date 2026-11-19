@@ -1,0 +1,8 @@
+{
+  "iqair_city_path": "beijing/beijing",
+  "iqair_station": "daxing-huangcun",
+  "aqi_threshold": 100,
+  "start_time": "19:00",
+  "end_time": "08:00",
+  "check_interval_min": 10
+}

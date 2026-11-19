@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+    <!-- macOS launchd 模板: 每隔 600 秒执行一次自动化检查。
+         使用前把 <REPO_DIR> 替换为仓库实际路径, 然后:
+           cp examples/com.purifier.auto352.plist ~/Library/LaunchAgents/
+           launchctl load ~/Library/LaunchAgents/com.purifier.auto352.plist -->
+    <key>Label</key>
+    <string>com.purifier.auto352</string>
+    <key>ProgramArguments</key>
+    <array>
+        <string>/usr/bin/python3</string>
+        <string>&lt;REPO_DIR&gt;/purifier.py</string>
+        <string>auto</string>
+    </array>
+    <key>StartInterval</key>
+    <integer>600</integer>
+    <key>RunAtLoad</key>
+    <true/>
+    <key>StandardOutPath</key>
+    <string>&lt;REPO_DIR&gt;/auto.log</string>
+    <key>StandardErrorPath</key>
+    <string>&lt;REPO_DIR&gt;/auto.err</string>
+    <key>WorkingDirectory</key>
+    <string>&lt;REPO_DIR&gt;</string>
+</dict>
+</plist>
